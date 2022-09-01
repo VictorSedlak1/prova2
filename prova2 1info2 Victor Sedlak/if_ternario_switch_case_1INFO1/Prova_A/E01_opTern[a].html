@@ -1,0 +1,29 @@
+<script>
+    //USANDO OPERADOR TERNÁRIO USANDO OPERADOR TERNÁRIO USANDO OPERADOR TERNÁRIO
+    
+    //PROBLEMA: Taxa de Juros
+    //Peça para o usuário informar o valor do computador que deseja comprar. Peça também para ele informar a quantidade de parcelas que deseja financiar.
+    //Considere que:
+    //Se a quantidade de parcelas for 1 (apenas uma), deverá ser aplicado um desconto de 5% (5/100).
+    //Se a quantidade de parcelas for até 6 (inclusive), o juro a ser aplicado será de 3% (3/100) sob o valor do computador.
+    //Se a quantidade de parcelas for até 12 (inclusive), o juro a ser aplicado será de 8% sob o valor do computador.
+    //Se a quantidade de parcelas for acima de 12, o juro a ser aplicado será de 12% sob o valor do computador.
+    //Apresente o valor final do computador e o valor de cada parcela.
+
+    //ENTRADA
+    const valorProduto = parseInt(prompt("Informe o valor do produto"))
+    const parcelas = parseInt(prompt("Informe quantas parcelas vocẽ fez"))
+    
+
+
+    //PROCESSAMENTO
+    let valorFinal;
+    (parcelas === 1) ? document.write(`Você recebera um desconto e pagara ${valorProduto - (valorProduto * 5 / 100)}`)
+    : (parcelas <= 6) ? document.write(`Você recebera um juros de 3% e pagara ${valorProduto + (valorProduto * 3 / 100)}`) 
+    : (parcelas <= 12) ? document.write(`Você recebera um juros de 8% e pagara ${valorProduto + (valorProduto * 8 / 100)}`)
+    : (parcelas > 12) ? document.write(`Você recebera um juros de 12% e pagara ${valorProduto + (valorProduto * 12/ 100)}`)
+    : document.write("Valor inválido")
+
+    //SAÍDA
+
+</script>

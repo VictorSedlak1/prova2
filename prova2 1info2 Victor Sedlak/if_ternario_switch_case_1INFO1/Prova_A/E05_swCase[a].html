@@ -1,0 +1,44 @@
+<script>
+    //SWITCH CASE SWITCH CASE SWITCH CASE
+
+    //PROBLEMA: Aplicar desconto na compra de celular
+    //Peça para o vendedor informar o valor do celular que está vendendo e também informar a forma de pagamento que o Cliente procederá para a comopra do celular.
+    //Se for via PIX, o cliente terá 7% (7/100) de descconto.
+    //Se for via Dinheiro, o cliente terá 5% (5/100) de desconto.
+    //Se for via Boleto, o cliente terá 3% (3/100) de desconto.
+
+    //Calcule e apresente o preço final do celular de acordo com a forma de Pagamento.
+
+    //ENTRADA
+    const celular = parseInt(prompt("Informe o valor do celular que está sendo vendido"))
+    const pagamento = (prompt("Informe a forma de pagamento (Pix= pi, Dinheiro = di, Boleto = bo"));
+    
+
+    const descontoP = celular - (celular * 7 / 100)
+    const descontoD = celular - (celular * 5 / 100)
+    const descontoB = celular - (celular * 3 / 100);
+
+
+
+    //PROCESSAMENTO
+    switch (pagamento) {
+        case "pi": 
+        document.write(`Você tera um desconto de 7% ficando ${descontoP}`)
+        break;
+        case "di":
+        document.write(`Você tera um deconto de 5% ficando ${descontoD}`)
+        break;
+        case "bo":
+        document.write(`Você tera um desconto de 3% ficando ${descontoB}`)
+        break;
+        default:
+        document.write("Valor inválido")
+
+
+    }
+        
+
+
+    //SAÍDA
+
+</script>
